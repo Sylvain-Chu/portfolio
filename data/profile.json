@@ -1,0 +1,17 @@
+{
+  "_id": "1",
+  "fullName": "Sylvain Churlet",
+  "headline": "Apprenti en développement logiciel",
+  "profileImage": {
+    "image": "/images/profile/me.jpg",
+    "lqip": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R+IRjWjBqO6O2mhP//Z",
+    "alt": "Photo de profil de Sylvain Churlet"
+  },
+  "shortBio": "Passionné par le développement web, je crée des expériences utilisateur exceptionnelles avec React, Next.js et Node.js. Spécialisé en design UI/UX et optimisation des performances.",
+  "email": "churlet.sylvain@gmail.com",
+  "fullBio": "Je suis Sylvain Churlet, apprenti en développement logiciel basé à Aix-les-Bains et à Lyon. Je suis passionné par le développement, j'ai réalisé différents projets en IA, vision par ordinateur et développement web. Mes expériences incluent des stages en télécommunications, développement web et informatique. J'aime résoudre des problèmes techniques et contribuer à des projets innovants.",
+  "location": "Aix-les-Bains, Auvergne-Rhône-Alpes, France",
+  "resumeURL": "#",
+  "og": "#",
+  "usage": "Outils quotidiens : VS Code, Git, Notion. Technologies : Vue, Vuetify, GraphQL, React, Next.js, TypeScript, Tailwind CSS, Node.js, Express, MongoDB."
+}

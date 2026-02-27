@@ -1,0 +1,35 @@
+[
+  {
+    "_id": "1",
+    "school": "CPE Lyon",
+    "logo": "/images/education/cpe-lyon.jpg",
+    "degree": "Informatique et Réseaux de Communication (IRC)",
+    "field": "Informatique",
+    "startDate": "sept. 2023"
+  },
+  {
+    "_id": "2",
+    "school": "IUT Annecy",
+    "logo": "/images/education/iut-annecy.jpg",
+    "degree": "Diplôme Universitaire d'Études Technologiques Internationales (DUETI)",
+    "field": "Informatique",
+    "startDate": "2020",
+    "endDate": "2023",
+    "description": "Année d'études à l'étranger à l'École de Technologie Supérieure (ÉTS) de Montréal en Baccalauréat en génie logiciel.",
+    "linkedSchool": {
+      "name": "École de technologie supérieure",
+      "url": "https://www.etsmtl.ca/",
+      "logo": "/images/education/ets.svg"
+    }
+  },
+  {
+    "_id": "3",
+    "school": "Lycée Louis Armand",
+    "logo": "/images/education/lycee-louis-armand.gif",
+    "degree": "Baccalauréat sciences et technologies de l'industrie et du développement durable",
+    "field": "Informatique",
+    "startDate": "2019",
+    "endDate": "2020",
+    "level": "Mention bien"
+  }
+]

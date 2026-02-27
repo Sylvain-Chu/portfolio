@@ -1,0 +1,397 @@
+[
+  {
+    "_id": "1",
+    "name": "Portfolio",
+    "slug": "portfolio",
+    "tagline": "Portfolio personnel",
+    "projectUrl": "https://sylvain.churlet.eu",
+    "repository": "https://github.com/Sylvain-Chu/portfolio",
+    "logo": "💼",
+    "coverImage": {
+      "image": "",
+      "alt": "Capture d'écran du portfolio sylvain.churlet.eu",
+      "lqip": ""
+    },
+    "description": "Mon portfolio, développé avec Next.js 14. Un projet simple en apparence, mais qui m'a permis de vraiment creuser l'App Router et les Server Components.",
+    "technologies": ["Next.js", "React", "TypeScript", "Tailwind CSS", "JavaScript"],
+    "detailedSections": [
+      {
+        "title": "Pourquoi ce projet ?",
+        "content": "J'avais besoin d'un endroit pour présenter mes projets, et je voulais que ce soit fait proprement, pas juste un template Notion. L'occasion idéale pour mettre en pratique Next.js 14 et son App Router, que je voulais comprendre en profondeur plutôt que de survoler."
+      },
+      {
+        "title": "Ce que j'ai construit",
+        "content": "L'interface est construite avec Tailwind CSS, entièrement responsive, avec un thème sombre/clair qui persiste entre les sessions. J'ai voulu quelque chose d'épuré : le contenu d'abord, le design au service du fond. Les animations avec Framer Motion ajoutent un peu de vie sans surcharger."
+      },
+      {
+        "title": "Gestion du contenu",
+        "content": "Pas de base de données, pas de CMS : tout le contenu vit dans des fichiers JSON lus côté serveur. C'est peut-être pas la solution la plus scalable, mais pour un portfolio ça colle parfaitement, simple à maintenir, zéro infrastructure à gérer, et TypeScript garantit que je ne me trompe pas dans mes données."
+      },
+      {
+        "title": "Ce qui est intégré",
+        "content": "Un graphique de contributions GitHub, un formulaire de contact, et des pages projets avec sections riches, galeries et icônes de technologies. Je voulais que chaque projet puisse raconter sa propre histoire, pas juste être une ligne dans une liste."
+      },
+      {
+        "title": "SEO et performances",
+        "content": "Sitemap et robots.txt générés automatiquement, métadonnées Open Graph pour les partages sur les réseaux, et Server-Side Rendering qui assure que le contenu est indexable. Rien de révolutionnaire, mais bien fait."
+      }
+    ]
+  },
+  {
+    "_id": "2",
+    "name": "Smart EV",
+    "slug": "smart-ev",
+    "tagline": "Calculateur d'itinéraire pour véhicules électriques",
+    "projectUrl": "",
+    "repository": "",
+    "logo": "⚡",
+    "coverImage": {
+      "image": "",
+      "alt": "Interface de Smart EV montrant un itinéraire avec bornes de recharge",
+      "lqip": ""
+    },
+    "description": "Une appli web pour planifier des longs trajets en voiture électrique, elle calcule automatiquement où s'arrêter recharger en fonction de l'autonomie du véhicule.",
+    "technologies": [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Prisma",
+      "SQLite",
+      "MapBox"
+    ],
+    "detailedSections": [
+      {
+        "title": "Ce que fait l'appli",
+        "content": "L'utilisateur entre son point de départ, sa destination, et l'autonomie de son véhicule. L'appli calcule l'itinéraire via MapBox et insère automatiquement les arrêts de recharge au bon endroit, sans que le conducteur ait à y penser. Le trajet est clé en main."
+      },
+      {
+        "title": "Comment ça marche",
+        "content": "Le frontend React affiche une carte MapBox interactive. Derrière, une API Next.js analyse le tracé brut de l'itinéraire et applique un algorithme pour positionner les bornes en fonction de l'autonomie restante à chaque étape. Les données des stations sont stockées dans SQLite via Prisma."
+      },
+      {
+        "title": "Les difficultés",
+        "content": "L'intégration de MapBox avec une logique de routage sur-mesure m'a donné du fil à retordre, il a fallu comprendre l'API en profondeur pour intercepter et modifier les données de route. La gestion des contraintes (dégradation de la batterie selon la vitesse, l'altitude, la température) a demandé plusieurs itérations d'algorithmes. Formateur."
+      },
+      {
+        "title": "Ce que j'ai appris",
+        "content": "Comment adapter une API générique à un cas d'usage très spécifique. Comment optimiser des interactions cartographiques en temps réel avec du debouncing et de la mémoïsation. Et surtout, que les problèmes du quotidien sont souvent des sujets de projets bien plus motivants que les exercices académiques."
+      },
+      {
+        "title": "Et après ?",
+        "content": "Des comptes utilisateurs pour sauvegarder les trajets favoris, des profils de batterie par modèle de véhicule, et idéalement des données en temps réel sur la disponibilité des bornes. La base est là, les fonctionnalités manquent encore de temps."
+      }
+    ]
+  },
+  {
+    "_id": "3",
+    "name": "LimoBall",
+    "slug": "limoball",
+    "tagline": "Robot autonome de collecte de balles de ping-pong",
+    "projectUrl": "",
+    "repository": "https://gitlab.com/cpelyon/rob/5irc-2025-2026/projets/limo_ball_churlet_glerean",
+    "logo": "🤖",
+    "coverImage": {
+      "image": "/images/projects/limoball/limo.g",
+      "alt": "Robot Limo",
+      "lqip": ""
+    },
+    "description": "Un robot autonome capable de détecter et ramasser des balles de ping-pong tout seul, avec un collecteur imprimé en 3D, de la vision par ordinateur et ROS 2.",
+    "technologies": ["ROS 2", "Python", "C++", "Docker", "OpenCV", "YOLO", "Nav2", "micro-ROS"],
+    "team": {
+      "members": ["Sylvain Churlet", "Arthur Glerean"],
+      "context": "Projet académique - CPE Lyon (5IRC)"
+    },
+    "dates": {
+      "start": "03/12/2025",
+      "end": "22/01/2026"
+    },
+    "detailedSections": [
+      {
+        "title": "Vue d'ensemble",
+        "content": "Le projet : faire en sorte qu'un robot Limo ramasse des balles de ping-pong tout seul, sans qu'on lui dise où elles sont. Il explore, détecte, s'approche, ramasse, et range, le tout de manière autonome. Derrière cette idée simple se cache une stack technique dense : ROS 2, YOLO, Nav2, micro-ROS, et un collecteur mécanique qu'on a dessiné et imprimé nous-mêmes."
+      },
+      {
+        "title": "Architecture technique",
+        "content": "Le système est organisé en couches : Perception (OpenCV + YOLO pour voir les balles), Navigation (Nav2 pour se déplacer sans rentrer dans les murs), Décision (une machine à états qui orchestre tout), et Action (l'ESP32 qui contrôle le mécanisme physique via micro-ROS). ROS 2 fait le lien entre tout ça via des topics et des services.",
+        "image": {
+          "url": "/images/projects/limoball/deployment_diagram.png",
+          "alt": "Diagramme de déploiement montrant l'architecture matérielle et logicielle du système"
+        }
+      },
+      {
+        "title": "Architecture logicielle",
+        "content": "On a soigné la séparation des modules pour pouvoir travailler en parallèle sans se marcher dessus. Chaque composant a une responsabilité claire et communique via ROS 2, ça rend les tests unitaires bien plus simples et le débogage moins douloureux.",
+        "image": {
+          "url": "/images/projects/limoball/component_diagram.png",
+          "alt": "Diagramme de composants illustrant l'organisation logicielle du système"
+        }
+      },
+      {
+        "title": "Voir les balles",
+        "content": "On utilise YOLO pour détecter les balles en temps réel depuis la caméra embarquée, avec OpenCV pour le prétraitement. Le modèle gère bien les variations d'éclairage, ce qui était loin d'être évident au départ. Les détections alimentent ensuite la machine à états pour décider quoi faire.",
+        "image": {
+          "url": "/images/projects/limoball/sequence_diagram.png",
+          "alt": "Diagramme de séquence montrant le flux d'exécution lors de la détection et collecte d'une balle"
+        }
+      },
+      {
+        "title": "Se déplacer seul",
+        "content": "Nav2 gère toute la navigation : localisation SLAM, planification de trajectoire, évitement d'obstacles dynamique. Le robot sait où il est, où il va, et comment ne pas foncer dans un mur. On a configuré les paramètres du planificateur pour qu'il soit fluide et réactif, pas juste fonctionnel."
+      },
+      {
+        "title": "Ramasser les balles",
+        "content": "Le mécanisme de collecte, on l'a conçu sur Fusion 360 et imprimé en 3D, plusieurs itérations avant d'avoir quelque chose de fiable. Il est contrôlé par un ESP32 intégré au graphe ROS 2 via micro-ROS : le microcontrôleur apparaît comme un nœud ROS 2 natif, ce qui simplifie vraiment la communication comparé à une liaison série classique."
+      },
+      {
+        "title": "Machine à états",
+        "content": "Le comportement du robot suit des états clairs : IDLE → EXPLORATION → APPROACH → COLLECT (→ RETURN_HOME). Ça rend le comportement prévisible et le débogage beaucoup plus simple, quand quelque chose cloche, on sait exactement dans quel état chercher.",
+        "image": {
+          "url": "/images/projects/limoball/state_diagram.png",
+          "alt": "Diagramme d'états montrant les différentes phases du robot et leurs transitions"
+        }
+      },
+      {
+        "title": "Interface de supervision",
+        "content": "Une interface permet de surveiller la mission en direct : flux vidéo avec les détections YOLO superposées, position sur une carte 2D, niveau de batterie, nombre de balles collectées. Et un arrêt d'urgence, parce qu'avec les robots, ça ne fait jamais de mal."
+      },
+      {
+        "title": "Simulation d'abord",
+        "content": "On a tout validé dans Gazebo avant de toucher au robot réel. C'est une discipline que j'ai vraiment apprécié : tester dans un environnement virtuel sûr, itérer vite, puis déployer avec confiance. Ça économise un temps fou (et quelques collisions potentielles)."
+      },
+      {
+        "title": "Les vraies difficultés",
+        "content": "Faire tourner ROS 2 Jazzy sur un Jetson Nano via Docker n'a pas été une promenade de santé. Calibrer YOLO pour des balles de ping-pong spécifiquement, synchroniser la détection visuelle avec la planification de trajectoire, intégrer l'ESP32 via micro-ROS, chaque brique a demandé du temps. Mais voir le robot ramasser une balle tout seul pour la première fois, ça valait le coup."
+      },
+      {
+        "title": "Résultats",
+        "content": "Le robot navigue seul, détecte et collecte les balles avec une bonne fiabilité. Ce qu'on améliorerait : une stratégie d'exploration plus intelligente, de la détection de remplissage du panier par vision, et un retour automatique à la base. La base est solide, la suite manque juste de temps."
+      }
+    ],
+    "gallery": [
+      {
+        "url": "/images/projects/limoball/deployment_diagram.png",
+        "alt": "Diagramme de déploiement du système LimoBall"
+      },
+      {
+        "url": "/images/projects/limoball/component_diagram.png",
+        "alt": "Diagramme de composants logiciels"
+      },
+      {
+        "url": "/images/projects/limoball/sequence_diagram.png",
+        "alt": "Diagramme de séquence de détection et collecte"
+      },
+      {
+        "url": "/images/projects/limoball/state_diagram.png",
+        "alt": "Machine à états du robot"
+      }
+    ]
+  },
+  {
+    "_id": "4",
+    "name": "AI-CoffeeLeaves",
+    "slug": "ai-coffeeleaves",
+    "tagline": "Diagnostic phytosanitaire des feuilles de café par IA",
+    "projectUrl": "",
+    "repository": "https://github.com/Sylvain-Chu/AI-CoffeeLeaves",
+    "logo": "🍃",
+    "coverImage": {
+      "image": "",
+      "alt": "Interface de diagnostic des feuilles de café avec détection de maladies",
+      "lqip": ""
+    },
+    "description": "Un modèle de deep learning pour diagnostiquer les maladies des feuilles de café depuis une simple photo. 15 pathologies détectées, 92% de précision, réalisé en stage à Bogotá.",
+    "technologies": ["Python", "PyTorch", "FastAPI", "Docker", "EfficientNet", "Jupyter"],
+    "team": {
+      "members": ["Sylvain Churlet"],
+      "context": "Stage - Universidad Militar Nueva Granada, Bogotá, Colombie"
+    },
+    "dates": {
+      "start": "01/06/2025",
+      "end": "31/08/2025"
+    },
+    "relatedJob": "2",
+    "detailedSections": [
+      {
+        "title": "Contexte",
+        "content": "J'ai réalisé ce projet durant mon stage à l'Universidad Militar Nueva Granada, en Colombie. Les agriculteurs peuvent perdre jusqu'à 50% de leur récolte à cause de maladies foliaires mal diagnostiquées trop tard. Le problème : le bon diagnostic nécessite une expertise agronomique que beaucoup de petits producteurs n'ont tout simplement pas."
+      },
+      {
+        "title": "L'idée",
+        "content": "Une photo prise avec un smartphone, et le modèle vous dit ce que votre plant de café a. Maladies (rouille, mineuse, phoma, cercospora...), carences nutritionnelles (azote, phosphore, magnésium...), ou feuille saine, 15 catégories au total. Le diagnostic arrive en quelques secondes, avec un score de confiance pour chaque pathologie."
+      },
+      {
+        "title": "Le modèle",
+        "content": "J'ai choisi EfficientNet-B0 pour son bon compromis précision/efficacité, il tourne rapidement même sur CPU, et je n'avais pas la puissance de GPU sous la main, donc c'était tous ce qu'il me fallait. Fine-tuné sur plus de 64 000 images annotées, avec du transfer learning et de la data augmentation pour gérer le déséquilibre des classes. Résultat : 92% de précision sur le jeu de test."
+      },
+      {
+        "title": "Les données",
+        "content": "Pas de dataset maison, j'ai fusionné plusieurs datasets publics reconnus (CoLeaf-DB, JMuBEN, RoCoLe, CoffeeRust-MS) en un catalogue unifié. Des scripts automatisent la génération des splits stratifiés train/validation/test. L'approche est modulaire : ajouter de nouvelles données ou reproduire les expériences est simple."
+      },
+      {
+        "title": "L'API",
+        "content": "Le modèle est exporté en TorchScript puis servi via FastAPI. On upload une image, on reçoit un JSON avec les probabilités triées par ordre décroissant. Moins de 300ms sur CPU, assez rapide pour une utilisation terrain. L'interface Swagger UI permet de tester directement. Tout est conteneurisé avec Docker."
+      },
+      {
+        "title": "Sur le terrain",
+        "content": "L'interface cible des agronomes et agriculteurs directement dans les plantations. Photo du téléphone → API → diagnostic en quelques secondes avec les 3 hypothèses les plus probables et leurs scores. L'objectif était d'être utilisable par quelqu'un qui n'a aucune notion de machine learning."
+      },
+      {
+        "title": "Ce qui était dur",
+        "content": "Le déséquilibre entre les classes (certaines maladies sont bien plus rares que d'autres dans les datasets) a nécessité du weighted cross-entropy et de l'augmentation ciblée. La variabilité des photos terrain, angles différents, éclairages variables, résolutions multiples. Cela a demandé un travail de robustification sérieux."
+      }
+    ]
+  },
+  {
+    "_id": "5",
+    "name": "Stayli",
+    "slug": "stayli",
+    "tagline": "Application de gestion de locations saisonnières",
+    "projectUrl": "",
+    "repository": "https://github.com/Sylvain-Chu/stayli",
+    "logo": "🏠",
+    "coverImage": {
+      "image": "",
+      "alt": "Dashboard de gestion Stayli avec calendrier et statistiques",
+      "lqip": ""
+    },
+    "description": "Une appli complète et auto-hébergeable pour gérer des locations saisonnières réservations, clients, factures PDF, contrats.",
+    "technologies": [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Prisma",
+      "PostgreSQL",
+      "Tailwind CSS",
+      "NextAuth"
+    ],
+    "team": {
+      "members": ["Sylvain Churlet"],
+      "context": "Projet personnel"
+    },
+    "detailedSections": [
+      {
+        "title": "Pourquoi j'ai fait ça ?",
+        "content": "Quelqu'un dans ma famille gère des locations saisonnières et m'a montré ses outils : soit trop basiques, soit avec des abonnements mensuels salés pour des fonctionnalités dont il n'a pas besoin. J'ai décidé de construire quelque chose de simple, complet, et auto-hébergeable."
+      },
+      {
+        "title": "Les réservations",
+        "content": "Le cœur de l'appli : un calendrier interactif avec drag & drop pour créer et modifier les réservations. Le système gère différents statuts (confirmée, en attente, annulée, bloquée) et calcule automatiquement les prix, nuitées, ménage, linge, taxe de séjour, assurance, remises."
+      },
+      {
+        "title": "Facturation et contrats",
+        "content": "Génération automatique de factures avec numérotation séquentielle et suivi des statuts (brouillon → envoyée → payée / en retard). Les PDFs sont générés via @react-pdf/renderer. Et des contrats de location complets, 2 pages, clauses légales, conditions d'annulation, description du bien, générés en un clic pour chaque réservation."
+      },
+      {
+        "title": "Tableau de bord",
+        "content": "Un dashboard qui donne une vraie vision d'ensemble : taux d'occupation, revenus mensuels, arrivées et départs du jour. Des alertes pour les check-ins imminents, les check-outs proches, les factures en retard. Les petites choses qui évitent les oublis qui coûtent."
+      },
+      {
+        "title": "Stack technique",
+        "content": "Next.js 16 avec App Router, React 19, TypeScript, Prisma 6 sur PostgreSQL, NextAuth v5 pour l'authentification JWT, SWR pour le data fetching côté client avec cache et revalidation. L'occasion de travailler avec des versions très récentes de chaque outil."
+      },
+      {
+        "title": "Interface",
+        "content": "Composants shadcn/ui et Radix UI pour l'accessibilité et la personnalisation, Tailwind CSS v4 pour le responsive. Les composants sont organisés par domaine métier plutôt que par type, une approche que j'ai trouvée bien plus maintenable sur la durée."
+      },
+      {
+        "title": "Déploiement",
+        "content": "Un docker-compose.yml pour lancer PostgreSQL, des migrations Prisma pour gérer le schéma, un script de seed avec des données réalistes pour tester. Configuration via variables d'environnement. L'objectif : qu'un non-développeur puisse l'installer en suivant un README."
+      }
+    ]
+  },
+  {
+    "_id": "6",
+    "name": "Firewall Defense",
+    "slug": "firewall-defense",
+    "tagline": "Jeu Tower Defense thématique cybersécurité",
+    "projectUrl": "",
+    "repository": "https://github.com/b4stOss/Firewall-Defense",
+    "logo": "🛡️",
+    "coverImage": {
+      "image": "",
+      "alt": "Screenshot du jeu Firewall Defense avec tourelles et ennemis",
+      "lqip": ""
+    },
+    "description": "Jeu Tower Defense en C++ avec SFML, défendre son réseau contre des Trojans et USB Killers avec des tourelles. Réalisé en une semaine avec deux amis à l'IUT d'Annecy.",
+    "technologies": ["C++", "SFML", "CMake"],
+    "team": {
+      "members": ["Sylvain Churlet", "Mathis Gantelet", "Bastien"],
+      "context": "Projet académique - IUT d'Annecy (DUT Informatique) - Semaine SFML"
+    },
+    "dates": {
+      "start": "2019",
+      "end": "2019"
+    },
+    "detailedSections": [
+      {
+        "title": "Le contexte",
+        "content": "À l'IUT d'Annecy, on avait une semaine entière dédiée à SFML, une bibliothèque C++ pour faire des jeux. Une semaine, une équipe de trois, un jeu à sortir. C'était notre deuxième expérience de développement de jeu."
+      },
+      {
+        "title": "Le concept",
+        "content": "Tower Defense avec une thématique cybersécurité : on joue un admin système qui défend son réseau contre des vagues de malwares. Les ennemis (Trojans, USB Killers) suivent un chemin, on place des tourelles et des mortiers pour les arrêter."
+      },
+      {
+        "title": "Le gameplay",
+        "content": "Des vagues progressives avec des ennemis de plus en plus résistants, un système de ressources qu'on gagne en éliminant les ennemis, un shop pour acheter et améliorer ses défenses entre les vagues. Chaque type de tourelle a ses propres stats de portée, dégâts et cadence de tir."
+      },
+      {
+        "title": "Comment ça marche ?",
+        "content": "Architecture orientée objet en C++ : Game pour la boucle principale, des classes séparées pour Turret, Mortar, Trojan, USBKiller, Projectile, Road, Shop. Un TextureManager centralisé pour éviter de charger les mêmes textures dix fois. Les animations gérées via spritesheets."
+      },
+      {
+        "title": "Ce qu'on a appris",
+        "content": "La game loop, la détection de collision, la gestion des ressources graphiques, l'architecture d'un petit projet de jeu. Et surtout : livrer quelque chose de jouable dans un délai court en équipe."
+      }
+    ]
+  },
+  {
+    "_id": "7",
+    "name": "Unity Kart Racing",
+    "slug": "unity-kart-racing",
+    "tagline": "Jeu de course de karting en 3D",
+    "projectUrl": "",
+    "repository": "https://github.com/tmillot74/jeu-unity",
+    "logo": "🏎️",
+    "coverImage": {
+      "image": "",
+      "alt": "Screenshot du jeu de karting Unity avec circuit et véhicules",
+      "lqip": ""
+    },
+    "description": "Jeu de karting 3D développé avec Unity et C# en une semaine à 5, basé sur le Karting Microgame d'Unity, enrichi avec un menu, un compte à rebours et des effets sonores.",
+    "technologies": ["Unity", "C#", "ShaderLab"],
+    "team": {
+      "members": [
+        "Sylvain Churlet",
+        "Thomas Millot",
+        "Tom Lebrun",
+        "Mewen Duault",
+        "Théotim Colin De Verdière"
+      ],
+      "context": "Projet académique - IUT d'Annecy (DUT Informatique) - Semaine Unity"
+    },
+    "dates": {
+      "start": "2021",
+      "end": "2021"
+    },
+    "detailedSections": [
+      {
+        "title": "Le contexte",
+        "content": "Semaine spéciale Unity à l'IUT d'Annecy : cinq personnes, cinq jours, un jeu à publier. C'était la première fois que la plupart d'entre nous touchaient à Unity, et l'objectif était de sortir quelque chose de jouable, pas juste un prototype."
+      },
+      {
+        "title": "Le jeu",
+        "content": "Un jeu de karting 3D arcade. On est partis du Karting Microgame d'Unity comme base et on a ajouté dessus : un menu principal, un système de démarrage avec compte à rebours, des effets sonores. Rien de révolutionnaire, mais un jeu complet avec un début et une fin. Une release v1.0 a été publiée à l'issue de la semaine."
+      },
+      {
+        "title": "Ce qu'on a développé",
+        "content": "La logique de jeu en C#, des shaders en ShaderLab pour quelques effets visuels, et une organisation Git. On a appris Git autant qu'Unity cette semaine-là."
+      },
+      {
+        "title": "Ce que ça m'a apporté",
+        "content": "Ma première vraie expérience de développement en équipe sur un moteur de jeu. Gérer des assets, comprendre la scène Unity, travailler avec des gens qui ont des rythmes différents, et livrer dans les temps. Des bases que j'utilise encore aujourd'hui."
+      }
+    ]
+  }
+]

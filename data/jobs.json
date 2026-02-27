@@ -1,0 +1,79 @@
+[
+  {
+    "_id": "1",
+    "name": "Taqt France (Skiply)",
+    "jobTitle": "Apprenti Développeur Logiciel & Cloud",
+    "logo": "/images/jobs/taqt-logo.jpg",
+    "url": "https://www.taqt.com",
+    "description": "Développement fullstack de la plateforme SaaS Ubiqod (IoT). Conception d'APIs REST avec Fastify/TypeScript et d'interfaces NuxtJS/Vue3. Optimisation des pipelines BigQuery (GCP) réduisant les coûts cloud et amélioration de l'adoption utilisateur via une refonte UI/UX complète. Intégration de connecteurs tiers (Zapier, Power Automate) et automatisation via Google Apps Script.",
+    "startDate": "2023-10-01",
+    "location": "Lyon, France"
+  },
+  {
+    "_id": "2",
+    "name": "Universidad Militar Nueva Granada",
+    "jobTitle": "Ingénieur télécommunications (Stage)",
+    "logo": "/images/jobs/umng-logo.avif",
+    "url": "https://www.umng.edu.co",
+    "description": "Développement d'un système de vision pour le diagnostic phytosanitaire des feuilles de café. Entraînement d'un modèle Deep Learning EfficientNet-B0 (PyTorch) sur 64k images annotées, atteignant une précision de 92 % sur 11 pathologies. Déploiement de la solution en micro-service via FastAPI et Docker, incluant une interface web dédiée à l'usage des agronomes sur le terrain.",
+    "startDate": "2025-06-01",
+    "endDate": "2025-08-31",
+    "location": "Bogotá, Colombie",
+    "relatedProject": "ai-coffeeleaves"
+  },
+  {
+    "_id": "3",
+    "name": "SoumissionRenovation.ca",
+    "jobTitle": "Développeur Web (Stage)",
+    "logo": "/images/jobs/soumission-renovation-logo.jpg",
+    "url": "https://soumissionrenovation.ca",
+    "description": "Participation active à la refonte globale du site internet et optimisation de l'architecture back-end. Implémentation de nouvelles fonctionnalités métier et renforcement de la sécurité applicative. Développement de solutions logicielles évolutives pour soutenir la croissance de l'entreprise et création d'outils d'automatisation internes visant à optimiser les flux de travail.",
+    "startDate": "2023-05-01",
+    "endDate": "2023-08-31",
+    "location": "Québec, Canada"
+  },
+  {
+    "_id": "4",
+    "name": "Alpes Contrôles",
+    "jobTitle": "Développeur Informatique (CDD & Stage)",
+    "logo": "/images/jobs/alpes-controles-logo.jpg",
+    "url": "#",
+    "description": "Conception et maintenance d'outils de gestion interne pour le traitement des rapports d'inspection réglementaire. Optimisation de scripts de manipulation de données permettant un gain de productivité significatif pour les inspecteurs. Travail sur l'amélioration de l'infrastructure logicielle existante et résolution d'anomalies techniques dans un environnement exigeant.",
+    "startDate": "2022-03-01",
+    "endDate": "2022-08-31",
+    "location": "Chambéry, France"
+  },
+  {
+    "_id": "5",
+    "name": "Tacticall Job",
+    "jobTitle": "Projet tutoré - Développeur Fullstack",
+    "logo": "/images/jobs/tacticall-job-logo.png",
+    "url": "#",
+    "description": "Conception et développement intégral (A à Z) d'une plateforme de mise en relation entre recruteurs et demandeurs d'emploi sous Laravel. Pilotage du projet au sein d'une équipe de 5 personnes en suivant la méthodologie Agile (sprints hebdomadaires). Responsable de la modélisation de la base de données, du design de l'interface et du développement des fonctionnalités core.",
+    "startDate": "2021-05-01",
+    "endDate": "2022-02-28",
+    "location": "Annecy, France"
+  },
+  {
+    "_id": "6",
+    "name": "APEI LES PAPILLONS BLANCS",
+    "jobTitle": "Économe (Job d'été)",
+    "logo": "/images/jobs/APEI-logo.jpg",
+    "url": "#",
+    "description": "Gestion opérationnelle de la logistique et des stocks. Responsable de la réception des commandes, de la vérification de la conformité des livraisons et de la réalisation des inventaires périodiques. Application rigoureuse des procédures de contrôle de flux.",
+    "startDate": "2021-07-01",
+    "endDate": "2021-08-31",
+    "location": "Aix les Bains, France"
+  },
+  {
+    "_id": "7",
+    "name": "HCC Chambéry",
+    "jobTitle": "Entraîneur de Rink Hockey (Service Civique)",
+    "logo": "/images/jobs/hcc-logo.png",
+    "url": "#",
+    "description": "Encadrement et formation de collectifs de tous âges (catégories Baby à Senior). Responsable de la préparation technique des séances, du coaching tactique en compétition et de la gestion logistique des déplacements. Organisation d'événements promotionnels et d'actions de recrutement pour le club.",
+    "startDate": "2019-09-01",
+    "endDate": "2020-04-30",
+    "location": "Chambéry, France"
+  }
+]
