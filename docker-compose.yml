@@ -4,5 +4,4 @@ services:
     container_name: portfolio
     restart: unless-stopped
     ports:
-      # Bind sur localhost seulement — Nginx fait le reverse proxy
-      - "127.0.0.1:3000:3000"
+      - "3000:3000"
